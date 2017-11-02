@@ -1,4 +1,8 @@
 class HomeController < ApplicationController
+  layout :set_layout
+  def set_layout
+    params[:controller] == "home" && params[:action] == "index" ? "home_layout" : "application"
+  end
   def index
   end
   def blog

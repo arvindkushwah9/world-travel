@@ -11,11 +11,11 @@
 //= require jquery-ui
 //= require jquery_ujs
 //= require bootstrap-sprockets
-//= requir jquery-latest.min
-//= requir bootstrap
-//= requir wow.min
-//= requir materialize.min
-//= requir custom
+//= require jquery-latest.min
+//= require bootstrap
+//= require wow.min
+//= require materialize.min
+//= require custom
 
 setTimeout(function() {
     $(document).ready(function(){

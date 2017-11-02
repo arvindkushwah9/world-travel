@@ -1,0 +1,60 @@
+
+.swipe {
+  margin-bottom:20px;
+  overflow:hidden;
+  position:relative;
+  width:100%;
+}
+.swipe ul{
+    overflow:hidden;
+}
+.swipe li div, .swipe div div div {
+  padding:0px;
+  
+}
+.swipe li  img{
+	max-width:100%;
+}
+.swipe li{
+	margin-right:5px;
+}
+#slider2 li{
+    width:50px;
+}
+#slider4{
+	line-height:0;
+	text-align:center;
+}
+#slider4 ul{
+	-webkit-transition:left 800ms ease-in 0;
+	-moz-transition:left 800ms ease-in 0;
+	-o-transition:left 800ms ease-in 0;
+	-ms-transition:left 800ms ease-in 0;
+	transition:left 800ms ease-in 0;
+}
+
+
+#slider li{
+	width:300px;
+	float:left;
+}
+#slider li:first-child{
+	width:100px;
+	margin:10px 40px;
+}
+#slider li:last-child{
+	width:500px;
+	border:3px solid #111;
+}
+#slider li:nth-child(2){
+	width:400px;
+}
+#slider li:nth-child(3){
+	width:400px;
+}
+#slider li:nth-child(4){
+	width:400px;
+}
+#slider1 li{
+	width:50px;
+}
