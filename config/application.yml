@@ -1,0 +1,38 @@
+default:
+  DATABASE_ADAPTER: postgresql
+  DATABASE_USER: root
+  DATABASE_PASSWORD: root
+  DATABASE_NAME: world_travel
+  DATABASE_HOST: localhost
+  DOMAIN: localhost
+
+
+development:
+  DATABASE_ADAPTER: postgresql
+  DATABASE_USER: root
+  DATABASE_PASSWORD: root
+  DATABASE_NAME: world_travel
+  DATABASE_HOST: localhost
+  DOMAIN: localhost
+  FACEBOOK_APP_ID: 1133579790070526
+  FACEBOOK_APP_SERCRET: '729849d09845f909f12be60e704ea9b9'
+  FACEBOOK_APP_VERSION: 'v2.8'
+
+testing:
+  DATABASE_ADAPTER: postgresql
+  DATABASE_USER: root
+  DATABASE_PASSWORD: root
+  DATABASE_NAME: world_travel
+  DATABASE_HOST: localhost
+  DOMAIN: localhost
+  
+production:
+  DATABASE_ADAPTER: postgresql
+  DATABASE_USER: root
+  DATABASE_PASSWORD: root
+  DATABASE_NAME: world_travel
+  DATABASE_HOST: localhost
+  DOMAIN: localhost
+  FACEBOOK_APP_ID: 207279879731459
+  FACEBOOK_APP_SERCRET: 'f24420d35e3cd4d5e02856536fb41076'
+  FACEBOOK_APP_VERSION: 'v2.8'

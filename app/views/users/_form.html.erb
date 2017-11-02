@@ -1,0 +1,86 @@
+<%= form_for([:admin, user], html: {class: "form-horizontal", role:"form"}) do |f| %>
+  <div class="row p30">
+    <div class="form-group">
+      <div class="col-md-2">
+        <p class="text-right"><b>Image:</b></p>
+      </div>
+      <div class="col-md-8">
+        <div>
+          <%= f.file_field :image, class: "form-control", placeholder:"" %>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <div class="col-md-2">
+        <p class="text-right"><b>First Name:</b></p>
+      </div>
+      <div class="col-md-8">
+        <div>
+          <%= f.text_field :first_name, class: "form-control", placeholder:"first name" %>
+        </div>
+      </div>
+    </div>
+    
+    <div class="form-group">
+      <div class="col-md-2">
+        <p class="text-right"><b>Last Name:</b></p>
+      </div>
+      <div class="col-md-8">
+        <div>
+          <%= f.text_field :last_name, class: "form-control", placeholder:"last name" %>
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="col-md-2">
+        <p class="text-right"><b>Role:</b></p>
+      </div>
+      <div class="col-md-8">
+        <div>
+          <%= f.select :role, [['Admin', 'admin'], ['Member', 'member']], {prompt: "Please select role"}, class: "form-control" %>
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="col-md-2">
+        <p class="text-right"><b>Email Address: </b></p>
+      </div>
+      <div class="col-md-8">
+        <div>
+          <%= f.email_field :email, class: "form-control", placeholder:"Email" %>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <div class="col-md-2">
+        <p class="text-right"><b>Password: </b></p>
+      </div>
+      <div class="col-md-8">
+        <div>
+          <%= f.text_field :password, class: "form-control", placeholder:"Password" %>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row" style="margin: 5% 0px;">
+      <div class="col-md-8"></div>
+      <div class="col-md-4">
+        <%= f.submit "Save changes", class: "btn btn-primary" %>
+        <%= link_to 'Delete', [:admin,  user], method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger" if f.object.id  %>
+      </div>
+    </div>
+  </div>
+<% end %>
+<!-- <script type="text/javascript">
+  <%# if user.try(:image).present? %>
+    $("#user_image").on('change',function(){
+      $('#file-input-div').hide();
+    });
+    $('.file-preview .close.fileinput-remove').on('click',function(){
+      $('#file-input-div').show();
+    })
+  <%# end %>
+</script> -->
