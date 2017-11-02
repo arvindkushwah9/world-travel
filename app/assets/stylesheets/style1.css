@@ -75,7 +75,7 @@ div:hover {
 [class~=nav] > li > a,
 [class~=head_right] ul li a {
     font-weight: 600;
-    color: black;\
+    color: black;
 }
 [class~=spe-title-1] h2 span,
 [class~=head_left] img,
