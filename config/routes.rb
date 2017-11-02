@@ -5,6 +5,7 @@ Rails.application.routes.draw do
 
   devise_for :users
   get 'home/index'
+  get '/blog', to: "home#blog"
   root 'home#index'
 
   namespace :admin, module: nil  do

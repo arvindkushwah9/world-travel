@@ -1,6 +1,9 @@
 class HomeController < ApplicationController
   def index
   end
+  def blog
+    
+  end
   def create
     user = Authentication.from_omniauth(request.env["omniauth.auth"])
     if user
